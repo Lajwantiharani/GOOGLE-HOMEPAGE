@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0; 
+    padding: 0; 
+}
+
+.google-logo {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 584px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    height: 44px;
+    border-radius: 24px;
+    padding: 0 14px;
+    margin: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 34px;
+    font-size: 14px; 
+}
+
+.search-box .btn {
+    margin-left: 10px;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; 
+    text-align: center;
+}
+
+.location {
+    padding: 15px;
+    font-size: 16px; 
+    color: #666;
+    border-bottom: 1px solid #ccc;
+   
+}
+
+.footer-top {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.left-links,
+.right-links {
+    
+    display: flex;
+            padding: 10px 30px;
+    }
+
+.left-links {
+    background-color: #f0f0f0;
+justify-content: flex-start;
+flex: 1;
+}
+
+.right-links {
+    background-color: #f0f0f0;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.footer-top a {
+    text-decoration: none;
+    color: black;
+    padding: 0 8px;
+    font-weight: lighter;
+}
+.top-right {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-right a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px; /* Adjust spacing between links */
+  }
+  
+  .top-right img {
+    width: 30px; /* Adjust size of user icon */
+    height: 30px;
+    border-radius: 50%; /* Make the user icon circular */
+  }
+  
+
+@media (max-width: 600px) {
+    .search-box {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .search-box input {
+        font-size: 12px; 
+    }
+
+    footer {
+        padding: 8px; /
+    }
+
+    .location {
+        padding: 10px;
+        font-size: 12px; 
+    }
+
+    .left-links,
+    .right-links {
+        padding: 5px;
+    }
+
+    .footer-top a {
+        padding: 0 5px;
+    }
+}
