@@ -130,7 +130,11 @@ flex: 1;
 
     .left-links,
     .right-links {
-        padding: 5px;
+        display: block;
+        padding: 10px;
+    }
+    .right-links {
+        order: 1; /* This moves .right-links above .left-links in the visual order */
     }
 
     .footer-top a {
